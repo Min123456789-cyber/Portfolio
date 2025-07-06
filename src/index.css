@@ -45,3 +45,17 @@ label{
 section{
     margin: 20px;
 }
+
+/* Smooth collapse transition */
+.collapsing {
+  transition: height 0.3s ease;
+}
+
+.navbar-collapse {
+  transition: height 0.3s ease;
+}
+
+/* Ensure smooth dropdown menu */
+.navbar-nav .nav-item .nav-link {
+  transition: all 0.2s ease;
+}

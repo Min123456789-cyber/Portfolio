@@ -11,41 +11,45 @@ const Project = () => {
           <h3 className="text-center">
             Some of <br /> the basic{" "}
             <span className="badge bg-info">Projects</span>
-          </h3>
-        </div>
-        <hr />
-        <div className="row my-4 gap-10">
-          <div className="col-lg-5 col-sm-12 mx-auto mb-3">
-            <div className="card" style={{ width: "18rem" }}>
-              <center>
-                <ProjectCard
-                  Image={Dice}
-                  title="Dice Game"
-                  description="Dice game with easy to understand rule."
-                  link="https://github.com/Min123456789-cyber/dice-game"
-                  live="https://dice-game-kappa-ebon.vercel.app/"
-                  code="Code"
-                  liveTitle="Play Game"
-                />
-              </center>
-            </div>
-          </div>
-          <div className="col-lg-5 col-sm-12 mx-auto mb-3">
-            <div className="card" style={{ width: "18rem" }}>
-              <center>
-                <ProjectCard
-                  Image={ImageUps}
-                  title="Image Uploader"
-                  description="Upload Your Image and make it a memory."
-                  link="https://github.com/Min123456789-cyber/ImageUpoader"
-                  code="Code"
-                  liveTitle="Not Available"
-                />
-              </center>
+        </h3>
+        <div className="divider bg-info mx-auto my-3" style={{ width: '80px', height: '4px' }}></div>
+      </div>
+      
+      <div className="row g-4 justify-content-center">
+        <div className="col-12 col-md-6 col-lg-4">
+          <div className="card h-100 shadow-sm">
+            <div className="card-body p-0">
+              <ProjectCard
+                Image={Dice}
+                title="Dice Game"
+                description="Dice game with easy to understand rule."
+                link="https://github.com/Min123456789-cyber/dice-game"
+                live="https://dice-game-kappa-ebon.vercel.app/"
+                code="Code"
+                liveTitle="Play Game"
+                className="h-100"
+              />
             </div>
           </div>
         </div>
-      </section>
+        
+        <div className="col-12 col-md-6 col-lg-4">
+          <div className="card h-100 shadow-sm">
+            <div className="card-body p-0">
+              <ProjectCard
+                Image={ImageUps}
+                title="Image Uploader"
+                description="Upload Your Image and make it a memory."
+                link="https://github.com/Min123456789-cyber/ImageUpoader"
+                code="Code"
+                liveTitle="Not Available"
+                className="h-100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     </>
   );
 };
