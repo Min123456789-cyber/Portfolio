@@ -1,0 +1,115 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - generic [ref=e4]:
+      - link "Logo" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "Logo" [ref=e7]
+      - generic [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link "Home" [ref=e11] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e12]:
+            - link "Projects" [ref=e13] [cursor=pointer]:
+              - /url: /project
+        - listitem [ref=e14]:
+          - link "Contact" [ref=e15] [cursor=pointer]:
+            - /url: mailto:meen.gurung333@gmail.com
+            - img [ref=e16]
+            - text: Contact
+  - generic [ref=e18]:
+    - generic [ref=e20]:
+      - generic [ref=e22]: Portfolio
+      - heading "Hi, I'm" [level=1] [ref=e23]
+      - heading "Min Bahadur Gurung" [level=1] [ref=e24]:
+        - text: Min Bahadur
+        - generic [ref=e25]: Gurung
+      - paragraph [ref=e26]:
+        - text: I'm a
+        - text: "|"
+    - generic [ref=e28]:
+      - paragraph [ref=e29]: Who I am
+      - heading "About Me" [level=2] [ref=e30]
+      - generic [ref=e31]:
+        - img "Min Bahadur Gurung" [ref=e34]
+        - generic [ref=e36]:
+          - img [ref=e38]
+          - paragraph [ref=e40]: Software Engineer and Full-Stack Developer focused on building responsive, scalable, and secure web applications. Experienced in front-end development with HTML, CSS, JavaScript, and React.js, and back-end development with .NET. Strong at turning requirements into clean, efficient, and user-focused solutions.
+          - paragraph [ref=e41]: I bring a practical approach to development, with attention to performance, usability, and maintainable code. I work well across teams, adapt quickly, and stay current with modern tools and frameworks to deliver reliable, high-quality products.
+    - generic [ref=e43]:
+      - paragraph [ref=e44]: What I know
+      - heading "Skills" [level=2] [ref=e45]
+      - generic [ref=e46]:
+        - img [ref=e48]
+        - paragraph [ref=e51]: The skills necessary for Web Development
+        - paragraph [ref=e52]: Programming Language
+        - generic [ref=e54]:
+          - img [ref=e55]
+          - text: C#
+        - paragraph [ref=e58]: Frameworks & Libraries
+        - generic [ref=e59]:
+          - generic [ref=e60]:
+            - img [ref=e61]
+            - text: ASP.NET
+          - generic [ref=e63]:
+            - img [ref=e64]
+            - text: ASP.NET WebForms
+          - generic [ref=e66]:
+            - img [ref=e67]
+            - text: ASP.NET Core
+          - generic [ref=e69]:
+            - img [ref=e70]
+            - text: Entity Framework
+          - generic [ref=e72]:
+            - img [ref=e73]
+            - text: React
+          - generic [ref=e75]:
+            - img [ref=e76]
+            - text: Bootstrap
+          - generic [ref=e78]:
+            - img [ref=e79]
+            - text: Tailwind CSS
+        - paragraph [ref=e82]: Tools
+        - generic [ref=e83]:
+          - generic [ref=e84]:
+            - img [ref=e85]
+            - text: Git
+          - generic [ref=e87]:
+            - img [ref=e88]
+            - text: GitHub
+    - generic [ref=e91]:
+      - paragraph [ref=e92]: Find me online
+      - heading "Feel free to check on me" [level=2] [ref=e94]
+      - generic [ref=e95]:
+        - link [ref=e96] [cursor=pointer]:
+          - /url: https://github.com/Min123456789-cyber
+          - img [ref=e97]
+        - link [ref=e99] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/minbahadurgurung/
+          - img [ref=e100]
+        - link [ref=e102] [cursor=pointer]:
+          - /url: https://www.instagram.com/mingurung45/
+          - img [ref=e103]
+    - generic [ref=e106]:
+      - paragraph [ref=e107]: Say hello
+      - heading "Get In Touch" [level=2] [ref=e108]
+      - generic [ref=e109]:
+        - img [ref=e111]
+        - heading "Let's Talk" [level=3] [ref=e114]
+        - paragraph [ref=e115]: Let's have an interesting talk about career building.
+        - generic [ref=e117]:
+          - generic [ref=e118]:
+            - generic [ref=e119]: Full Name
+            - textbox "Enter your full name" [ref=e120]
+          - generic [ref=e121]:
+            - generic [ref=e122]: Email
+            - textbox "Enter your email" [ref=e123]
+          - generic [ref=e124]:
+            - generic [ref=e125]: Message
+            - textbox "Enter your message" [ref=e126]
+          - button "Send Message" [ref=e128] [cursor=pointer]
+  - contentinfo [ref=e129]:
+    - link "Logo" [ref=e131] [cursor=pointer]:
+      - /url: /
+      - img "Logo" [ref=e132]
+    - paragraph [ref=e133]: Copyright © 2024 Min Bahadur Gurung. All rights reserved.

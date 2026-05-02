@@ -4,34 +4,47 @@ import { RiContactsFill } from "react-icons/ri";
 
 const About = () => {
   return (
-    <>
-      <div className="m-4">
-        <div className="container">
-          <div>
-            <h5 className="fs-2 py-4">About Me</h5>
-          </div>
-          <div className="row">
-            <div className="col-lg-4 mb-3">
-              <img src={HeroImg} className="img-fluid rounded" alt="MyImage" />
+    <section className="about-section">
+      <div className="container">
+        <p className="section-eyebrow">Who I am</p>
+        <h2 className="section-heading">About Me</h2>
+
+        <div className="row align-items-center">
+          <div className="col-lg-4 mb-4 mb-lg-0">
+            <div className="about-img-frame">
+              <img src={HeroImg} alt="Min Bahadur Gurung" />
             </div>
-            <div className="col-lg-8 border mb-3 rounded p-4">
-              <RiContactsFill className="my-3 fs-1 border p-2 rounded bg-body-tertiary"/>
-              <p style={{textAlign: "justify"}}>
-                Software Engineer and Full-Stack Developer focused on building responsive, 
-                scalable, and secure web applications. Experienced in front-end development 
-                with HTML, CSS, JavaScript, and React.js, and back-end development with .NET. 
+          </div>
+
+          <div className="col-lg-8">
+            <div
+              style={{
+                background: "var(--surface)",
+                border: "1.5px solid var(--border)",
+                borderRadius: "14px",
+                padding: "2rem",
+              }}
+            >
+              <div className="about-icon-box">
+                <RiContactsFill />
+              </div>
+
+              <p className="about-text">
+                Software Engineer and Full-Stack Developer focused on building responsive,
+                scalable, and secure web applications. Experienced in front-end development
+                with HTML, CSS, JavaScript, and React.js, and back-end development with .NET.
                 Strong at turning requirements into clean, efficient, and user-focused solutions.
               </p>
-              <p style={{textAlign: "justify"}}>
-                I bring a practical approach to development, with attention to performance, usability, 
-                and maintainable code. I work well across teams, adapt quickly, and stay current with 
+              <p className="about-text" style={{ marginBottom: 0 }}>
+                I bring a practical approach to development, with attention to performance, usability,
+                and maintainable code. I work well across teams, adapt quickly, and stay current with
                 modern tools and frameworks to deliver reliable, high-quality products.
               </p>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

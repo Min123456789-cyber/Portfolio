@@ -10,16 +10,31 @@ const HeroSec = () => {
   });
 
   return (
-    <div className="container d-flex flex-column justify-content-center align-items-center" style={{height: "95vh"}}>
-      <h1 className="text-5xl sm:text-3xl font-mono">
-        Hi, I'm <br /> <span className="font-serif">Min Bahadur Gurung</span>
-      </h1>
-      <h1 className="text-center fs-1 font-sans sm:text-3xl">
-        I'm a <span className="text-info">{text}</span>
-        <span>
-          <Cursor cursorBlinking cursorStyle=">" cursorColor="orange" className="z-0"/>
-        </span>
-      </h1>
+    <div className="hero-wrap">
+      <div className="hero-bg-shape s1" />
+      <div className="hero-bg-shape s2" />
+      <div className="hero-bg-shape s3" />
+
+      <div className="hero-inner">
+        <div className="anim-fade-up anim-d1">
+          <span className="hero-badge">Portfolio</span>
+        </div>
+
+        <h1 className="hero-name anim-fade-up anim-d2">
+          Hi, I'm
+        </h1>
+
+        <h1 className="hero-name anim-fade-up anim-d3">
+          Min Bahadur{" "}
+          <span className="hero-name-highlight">Gurung</span>
+        </h1>
+
+        <p className="hero-typewriter anim-fade-up anim-d4">
+          I'm a{" "}
+          <span className="type-word">{text}</span>
+          <Cursor cursorBlinking cursorStyle="|" cursorColor="#F5C842" />
+        </p>
+      </div>
     </div>
   );
 };

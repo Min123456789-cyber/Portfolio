@@ -1,0 +1,47 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - generic [ref=e4]:
+      - link "Logo" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "Logo" [ref=e7]
+      - generic [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link "Home" [ref=e11] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e12]:
+            - link "Projects" [ref=e13] [cursor=pointer]:
+              - /url: /project
+        - listitem [ref=e14]:
+          - link "Contact" [ref=e15] [cursor=pointer]:
+            - /url: mailto:meen.gurung333@gmail.com
+            - img [ref=e16]
+            - text: Contact
+  - generic [ref=e19]:
+    - paragraph [ref=e20]: What I've built
+    - heading "Some of the basic Projects" [level=2] [ref=e21]
+    - generic [ref=e23]:
+      - generic [ref=e25]:
+        - img "Dice Game" [ref=e26]
+        - generic [ref=e27]:
+          - heading "Dice Game" [level=5] [ref=e28]
+          - paragraph [ref=e29]: Dice game with easy to understand rules.
+          - generic [ref=e30]:
+            - link "View Code" [ref=e31] [cursor=pointer]:
+              - /url: https://github.com/Min123456789-cyber/dice-game
+            - link "Play Game" [ref=e32] [cursor=pointer]:
+              - /url: https://dice-game-kappa-ebon.vercel.app/
+      - generic [ref=e34]:
+        - img "Image Uploader" [ref=e35]
+        - generic [ref=e36]:
+          - heading "Image Uploader" [level=5] [ref=e37]
+          - paragraph [ref=e38]: Upload your image and make it a memory.
+          - generic [ref=e39]:
+            - link "View Code" [ref=e40] [cursor=pointer]:
+              - /url: https://github.com/Min123456789-cyber/ImageUpoader
+            - generic: Not Available
+  - contentinfo [ref=e41]:
+    - link "Logo" [ref=e43] [cursor=pointer]:
+      - /url: /
+      - img "Logo" [ref=e44]
+    - paragraph [ref=e45]: Copyright © 2024 Min Bahadur Gurung. All rights reserved.

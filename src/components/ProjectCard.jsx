@@ -1,31 +1,30 @@
 import React from "react";
 
-const ProjectCard = (props) => {
+const ProjectCard = ({ Image, title, description, link, live, code, liveTitle }) => {
   return (
-    <>
-      <img src={props.Image} className="card-img-top" alt="" />
-      <div className="card-body">
-        <h5 className="card-title">{props.title}</h5>
-        <p className="card-text">{props.description}</p>
-        <div className="d-flex gap-3">
+    <div className="project-card">
+      <img src={Image} className="project-card-img" alt={title} />
+      <div className="project-card-body">
+        <h5 className="project-card-title">{title}</h5>
+        <p className="project-card-desc">{description}</p>
+        <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap" }}>
+          {link && (
+            <a href={link} target="_blank" rel="noopener noreferrer" className="btn-code">
+              {code || "Code"}
+            </a>
+          )}
           <a
-            href={props.link}
-            target="_blank"
-            className="btn btn-secondary"
+            href={live || undefined}
+            target={live ? "_blank" : undefined}
+            rel="noopener noreferrer"
+            className="btn-live"
+            style={!live ? { opacity: 0.5, cursor: "not-allowed", pointerEvents: "none" } : {}}
           >
-            {props.code}
-          </a>
-          
-          <a
-            href={props.live}
-            target="_blank"
-            className="btn btn-outline-secondary"
-          >
-            {props.liveTitle}
+            {liveTitle}
           </a>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

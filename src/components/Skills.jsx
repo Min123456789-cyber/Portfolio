@@ -1,41 +1,66 @@
-import React from 'react'
-import { BiCheck } from "react-icons/bi";
+import React from "react";
 import { IoStarHalf } from "react-icons/io5";
+import { BiCheck } from "react-icons/bi";
+
+const Tag = ({ label, variant = "blue" }) => (
+  <span className={`stag stag-${variant}`}>
+    <BiCheck />
+    {label}
+  </span>
+);
 
 const Skills = () => {
   return (
-    <>
-      <div className='m-4'>
-        <div className='container'>
-            <h5 className='py-4 fs-2'>Skills</h5>
-            <div className='row border rounded'>
-                <div className='col-lg-12'>
-                    <IoStarHalf className="my-3 fs-1 border p-2 rounded bg-body-tertiary"/>
-                    <h3 className='fs-4 pb-2'>The skills necessary for Web Development...</h3>
-                    <hr />
-                    <div className='skill gap-4'>
-                      <h1 className='fs-3 py-1'>Programming Language</h1>
-                      <li><BiCheck style={{display:"inline-block"}}/>c#</li>
-                      <hr />
-                      <h1 className='fs-3 py-1'>Frameworks</h1>
-                      <li><BiCheck style={{display:"inline-block"}}/>asp.net</li>
-                      <li><BiCheck style={{display:"inline-block"}}/>asp.net WebForms</li>
-                      <li><BiCheck style={{display:"inline-block"}}/>asp.net core</li>
-                      <li><BiCheck style={{display:"inline-block"}}/>Entity Framework</li>
-                      <li><BiCheck style={{display:"inline-block"}}/>React</li>
-                      <li><BiCheck style={{display:"inline-block"}}/>Bootstrap</li>
-                      <li><BiCheck style={{display:"inline-block"}}/>Tailwind Css</li>
-                      <hr />
-                      <h1 className='fs-3 pb-1'>Tools</h1>
-                      <li><BiCheck style={{display:"inline-block"}}/>Git</li>
-                      <li><BiCheck style={{display:"inline-block"}}/>GitHub</li>
-                    </div>
-                </div>
-            </div>
+    <section className="skills-section">
+      <div className="container">
+        <p className="section-eyebrow">What I know</p>
+        <h2 className="section-heading">Skills</h2>
+
+        <div className="skills-card">
+          <div className="skills-icon-box">
+            <IoStarHalf />
+          </div>
+          <p
+            style={{
+              fontFamily: "'Syne', sans-serif",
+              fontWeight: 600,
+              fontSize: "0.95rem",
+              color: "var(--navy-soft)",
+              marginBottom: "1.5rem",
+            }}
+          >
+            The skills necessary for Web Development
+          </p>
+
+          <p className="skill-category">Programming Language</p>
+          <div>
+            <Tag label="C#" variant="blue" />
+          </div>
+
+          <div className="skills-divider" />
+
+          <p className="skill-category">Frameworks & Libraries</p>
+          <div>
+            <Tag label="ASP.NET" variant="blue" />
+            <Tag label="ASP.NET WebForms" variant="blue" />
+            <Tag label="ASP.NET Core" variant="blue" />
+            <Tag label="Entity Framework" variant="blue" />
+            <Tag label="React" variant="yellow" />
+            <Tag label="Bootstrap" variant="yellow" />
+            <Tag label="Tailwind CSS" variant="yellow" />
+          </div>
+
+          <div className="skills-divider" />
+
+          <p className="skill-category">Tools</p>
+          <div>
+            <Tag label="Git" variant="neutral" />
+            <Tag label="GitHub" variant="neutral" />
+          </div>
         </div>
       </div>
-    </>
-  )
-}
+    </section>
+  );
+};
 
-export default Skills
+export default Skills;
