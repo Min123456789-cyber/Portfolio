@@ -1,5 +1,7 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { NavLink } from "react-router-dom";
+import { FiArrowRight } from "react-icons/fi";
 
 const HeroSec = () => {
   const [text] = useTypewriter({
@@ -34,6 +36,15 @@ const HeroSec = () => {
           <span className="type-word">{text}</span>
           <Cursor cursorBlinking cursorStyle="|" cursorColor="#F5C842" />
         </p>
+
+        <div className="hero-cta anim-fade-up anim-d5">
+          <NavLink to="/project" className="btn-hero-primary">
+            View My Work <FiArrowRight />
+          </NavLink>
+          <a href="mailto:meen.gurung333@gmail.com" className="btn-hero-ghost">
+            Get In Touch
+          </a>
+        </div>
       </div>
     </div>
   );

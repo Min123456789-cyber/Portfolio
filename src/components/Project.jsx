@@ -18,7 +18,7 @@ const Project = () => {
             marginBottom: "0.5rem",
           }}
         >
-          Some of the basic{" "}
+          Selected{" "}
           <span
             style={{
               background: "var(--yellow)",

@@ -13,15 +13,16 @@ const ProjectCard = ({ Image, title, description, link, live, code, liveTitle })
               {code || "Code"}
             </a>
           )}
-          <a
-            href={live || undefined}
-            target={live ? "_blank" : undefined}
-            rel="noopener noreferrer"
-            className="btn-live"
-            style={!live ? { opacity: 0.5, cursor: "not-allowed", pointerEvents: "none" } : {}}
-          >
-            {liveTitle}
-          </a>
+          {live && (
+            <a
+              href={live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-live"
+            >
+              {liveTitle}
+            </a>
+          )}
         </div>
       </div>
     </div>

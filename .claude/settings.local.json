@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5174)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5174/)",
+      "Bash(npx puppeteer *)",
+      "Bash(python3 -c \"import selenium\")",
+      "Bash(python3 -c \"from playwright.sync_api import sync_playwright; print\\('playwright ok'\\)\")"
+    ]
+  }
+}

@@ -35,6 +35,10 @@ const Skills = () => {
           <p className="skill-category">Programming Language</p>
           <div>
             <Tag label="C#" variant="blue" />
+            <Tag label="JavaScript" variant="blue" />
+            <Tag label="TypeScript" variant="blue" />
+            <Tag label="HTML" variant="blue" />
+            <Tag label="CSS" variant="blue" />
           </div>
 
           <div className="skills-divider" />

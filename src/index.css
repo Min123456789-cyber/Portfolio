@@ -212,6 +212,58 @@ li {
   font-weight: 700;
 }
 
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2.25rem;
+  flex-wrap: wrap;
+}
+
+.btn-hero-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  background: var(--yellow);
+  color: var(--navy);
+  border-radius: 8px;
+  padding: 0.72rem 1.6rem;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s, color 0.2s;
+}
+
+.btn-hero-primary:hover {
+  background: var(--yellow-dark);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(245, 200, 66, 0.42);
+}
+
+.btn-hero-ghost {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  background: transparent;
+  color: var(--navy-soft);
+  border-radius: 8px;
+  padding: 0.72rem 1.6rem;
+  text-decoration: none;
+  border: 1.5px solid var(--border);
+  transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.15s;
+}
+
+.btn-hero-ghost:hover {
+  background: var(--sky-pale);
+  border-color: var(--sky-light);
+  color: var(--sky-dark);
+  transform: translateY(-2px);
+}
+
 /* ── About ── */
 .about-section {
   padding: 4rem 0;
@@ -255,11 +307,15 @@ li {
 }
 
 .about-text {
-  color: var(--navy-soft);
+  color: var(--navy-soft) !important;
   font-size: 0.95rem;
   text-align: justify;
   margin-bottom: 1rem;
   line-height: 1.75;
+}
+
+.about-text * {
+  color: inherit !important;
 }
 
 /* ── Skills ── */
@@ -505,6 +561,7 @@ li {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  background-color: var(--sky-pale);
   border-bottom: 2px solid var(--sky-light);
   display: block;
 }
@@ -626,6 +683,7 @@ li {
 .anim-d2               { animation-delay: 0.2s; }
 .anim-d3               { animation-delay: 0.38s; }
 .anim-d4               { animation-delay: 0.55s; }
+.anim-d5               { animation-delay: 0.72s; }
 
 /* ── Bootstrap overrides ── */
 .collapsing { transition: height 0.3s ease; }
